@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<!-- Design helper v 0.1 By AXeL
+     Date de création : 29/11/2014
+     Date de la dernière modification : 04/12/2014
+     Idées d'amélioration :
+                           - importer un design ('à chier pt1' completed ! ';))')
+                           - text-decoration comboBox (completed !)
+                           - font-family comboBox (completed !)
+                           - font-weight comboBox (completed !)
+						   - boutton '?' (completed !)
+						   - drag/drop des parties du design pr les déplacer
+						   - ajouter des images (completed !)
+						   - dark theme (completed !)
+						   - opacity textBox
+-->
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="default_style.css" />
+		<title>Design Helper</title>
+	</head>
+
+	<body>
+		<!-- header -->
+		<div class="header" >
+			<h1>Design Helper v 0.1 <a href="#" class="author_name" ><i>By AXeL</i></a></h1>
+		</div>
+		<!-- body_wrapper -->
+		<div class="body_wrapper" >
+			<!-- tools -->
+			<span id="tools" >
+				<form>
+				<div id="scroll_div" >
+					<!-- design_header -->
+					<div name="0" class="parent" >
+						<div class="d_p_title" ><input name="hide_show" class="hide_show dark_buttons" type="button" value="&#8691;" /><input name="question_btn" class="question_btn dark_buttons" type="button" value="?" /><input class="dark_textboxs" type="text" value="Header" /><select name="d_special_chars" class="d_special_chars dark_selects" ><option></option><option>&#9861;</option><option>&copy;</option><option>&spades;</option><option>&clubs;</option><option>&hearts;</option><option>&diams;</option><option>&#9733;</option><option>&#9734;</option><option>&#9728;</option><option>&#9742;</option><option>&#9745;</option><option>&#9746;</option><option>&#9775;</option><option>&#9776;</option><option>&#9834;</option><option>&#8635;</option><option>&#8658;</option></select><input name="font_size_input" class="font_size_input dark_numbers" type="number" value="30" min="10" max="50" /></div>
+						<span class="design_pieces" >
+							<label>Width</label>
+							<input class="dark_textboxs" type="text" value="800px" />
+							<label>Height</label>
+							<input class="dark_textboxs" type="text" value="80px" />
+							<label>Display</label>
+							<select class="dark_selects" name="d_display" >
+								<option>block</option>
+								<option>inline-block</option>
+								<option>inline</option>
+								<option>none</option>
+							</select>
+							<br />
+							<label>Float|Pos</label>
+							<select class="dark_selects" >
+								<option>none</option>
+								<option>left</option>
+								<option>right</option>
+							</select>
+							<select class="dark_selects" >
+								<option value="relative" >relative</option>
+								<option value="absolute" >absolute (to parent)</option>
+								<option value="fixed" >fixed (to client)</option>
+							</select>
+							<label class="d_background" >BackG</label>
+							<input class="dark_textboxs" type="text" value="#74a9b9" />
+							<input class="d_random_btn" name="random_color" type="button" value="Random" />
+							<input class="d_img_btn" type="button" value="img" style="width: inherit;" />
+							<input class="d_fetch_img" type="file" accept="image/*" />
+							<br />
+							<label>Border</label>
+							<select class="dark_selects" >
+								<option>none</option>
+								<option selected="selected" >solid</option>
+								<option>dotted</option>
+								<option>inset</option>
+							</select>
+							<select class="dark_selects" >
+								<option value="" >all</option>
+								<option value="-top" >top</option>
+								<option value="-left" >left</option>
+								<option value="-right" >right</option>
+								<option value="-bottom" selected="selected" >bottom</option>
+							</select>
+							<input class="dark_textboxs" type="text" value="3px" />
+							<input class="dark_textboxs" type="text" value="#feaa40" />
+							<input class="d_random_btn" name="random_color" type="button" value="Random" />
+							<br />
+							<label>Radius</label>
+							<input class="dark_textboxs" type="text" value="5px" />
+							<label>Margin</label>
+							<input class="dark_textboxs" type="text" value="0px 0px" />
+							<label>Padding</label>
+							<input class="dark_textboxs" type="text" value="0px 0px" />
+							<br />
+							<label>Top</label>
+							<input class="dark_textboxs" type="text" value="auto" />
+							<label>Left</label>
+							<input class="dark_textboxs" type="text" value="auto" />
+							<label>Right</label>
+							<input class="dark_textboxs" type="text" value="auto" />
+							<br />
+							<label>Bottom</label>
+							<input class="dark_textboxs" type="text" value="auto" style="width: 40px;" />
+							<label>TextAlign</label>
+							<select class="dark_selects" >
+								<option>center</option>
+								<option>left</option>
+								<option>right</option>
+							</select>
+							<label>TextColor</label>
+							<input class="dark_textboxs" type="text" value="black" />
+							<input class="d_random_btn" name="random_color" type="button" value="Rd" style="width: 28px;" />
+							<br />
+							<label>TextDecoration</label>
+							<select class="dark_selects" >
+								<option>none</option>
+								<option>underline</option>
+								<option>overline</option>
+								<option>line-through</option>
+							</select>
+							<label>FontFamily</label>
+							<select class="dark_selects" >
+								<option>sans-serif</option>
+								<option>serif</option>
+								<option>arial</option>
+								<option>courier</option>
+								<option>helvetica</option>
+							</select>
+							<label>FontWeight</label>
+							<select class="dark_selects" >
+								<option>bold</option>
+								<option>normal</option>
+								<option>bolder</option>
+								<option>lighter</option>
+							</select>
+						</span>
+					</div>
+					<!-- design_body_wrapper -->
+					<div name="1" class="parent" >
+						<div class="d_p_title" ><input name="hide_show" class="hide_show dark_buttons" type="button" value="&#8691;" /><input name="question_btn" class="question_btn dark_buttons" type="button" value="?" /><input class="dark_textboxs" type="text" value="Body Wrapper" /><select name="d_special_chars" class="d_special_chars dark_selects" ><option></option><option>&#9861;</option><option>&copy;</option><option>&spades;</option><option>&clubs;</option><option>&hearts;</option><option>&diams;</option><option>&#9733;</option><option>&#9734;</option><option>&#9728;</option><option>&#9742;</option><option>&#9745;</option><option>&#9746;</option><option>&#9775;</option><option>&#9776;</option><option>&#9834;</option><option>&#8635;</option><option>&#8658;</option></select><input name="font_size_input" class="font_size_input dark_numbers" type="number" value="30" min="10" max="50" /></div>
+						<span class="design_pieces" >
+							<label>Width</label>
+							<input class="dark_textboxs" type="text" value="700px" />
+							<label>Height</label>
+							<input class="dark_textboxs" type="text" value="400px" />
+							<label>Display</label>
+							<select class="dark_selects" name="d_display" >
+								<option>block</option>
+								<option>inline-block</option>
+								<option>inline</option>
+								<option>none</option>
+							</select>
+							<br />
+							<label>Float|Pos</label>
+							<select class="dark_selects" >
+								<option>none</option>
+								<option>left</option>
+								<option>right</option>
+							</select>
+							<select class="dark_selects" >
+								<option value="relative" >relative</option>
+								<option value="absolute" >absolute (to parent)</option>
+								<option value="fixed" >fixed (to client)</option>
+							</select>
+							<label class="d_background" >BackG</label>
+							<input class="dark_textboxs" type="text" value="#f0f0f0" />
+							<input class="d_random_btn" name="random_color" type="button" value="Random" />
+							<input class="d_img_btn" type="button" value="img" style="width: inherit;" />
+							<input class="d_fetch_img" type="file" accept="image/*" />
+							<br />
+							<label>Border</label>
+							<select class="dark_selects" >
+								<option>none</option>
+								<option>solid</option>
+								<option>dotted</option>
+								<option>inset</option>
+							</select>
+							<select class="dark_selects" >
+								<option value="" >all</option>
+								<option value="-top" >top</option>
+								<option value="-left" >left</option>
+								<option value="-right" >right</option>
+								<option value="-bottom" >bottom</option>
+							</select>
+							<input class="dark_textboxs" type="text" value="3px" />
+							<input class="dark_textboxs" type="text" value="#333333" />
+							<input class="d_random_btn" name="random_color" type="button" value="Random" />
+							<br />
+							<label>Radius</label>
+							<input class="dark_textboxs" type="text" value="0px" />
+							<label>Margin</label>
+							<input class="dark_textboxs" type="text" value="0px 50px" />
+							<label>Padding</label>
+							<input class="dark_textboxs" type="text" value="0px 0px" />
+							<br />
+							<label>Top</label>
+							<input class="dark_textboxs" type="text" value="auto" />
+							<label>Left</label>
+							<input class="dark_textboxs" type="text" value="auto" />
+							<label>Right</label>
+							<input class="dark_textboxs" type="text" value="auto" />
+							<br />
+							<label>Bottom</label>
+							<input class="dark_textboxs" type="text" value="auto" style="width: 40px;" />
+							<label>TextAlign</label>
+							<select class="dark_selects" >
+								<option>center</option>
+								<option>left</option>
+								<option>right</option>
+							</select>
+							<label>TextColor</label>
+							<input class="dark_textboxs" type="text" value="black" />
+							<input class="d_random_btn" name="random_color" type="button" value="Rd" style="width: 28px;" />
+							<br />
+							<label>TextDecoration</label>
+							<select class="dark_selects" >
+								<option>none</option>
+								<option>underline</option>
+								<option>overline</option>
+								<option>line-through</option>
+							</select>
+							<label>FontFamily</label>
+							<select class="dark_selects" >
+								<option>sans-serif</option>
+								<option>serif</option>
+								<option>arial</option>
+								<option>courier</option>
+								<option>helvetica</option>
+							</select>
+							<label>FontWeight</label>
+							<select class="dark_selects" >
+								<option>bold</option>
+								<option>normal</option>
+								<option>bolder</option>
+								<option>lighter</option>
+							</select>
+						</span>
+					</div>
+					<!-- design_footer -->
+					<div name="2" class="parent" >
+						<div class="d_p_title" ><input name="hide_show" class="hide_show dark_buttons" type="button" value="&#8691;" /><input name="question_btn" class="question_btn dark_buttons" type="button" value="?" /><input class="dark_textboxs" type="text" value="Footer" /><select name="d_special_chars" class="d_special_chars dark_selects" ><option></option><option>&#9861;</option><option>&copy;</option><option>&spades;</option><option>&clubs;</option><option>&hearts;</option><option>&diams;</option><option>&#9733;</option><option>&#9734;</option><option>&#9728;</option><option>&#9742;</option><option>&#9745;</option><option>&#9746;</option><option>&#9775;</option><option>&#9776;</option><option>&#9834;</option><option>&#8635;</option><option>&#8658;</option></select><input name="font_size_input" class="font_size_input dark_numbers" type="number" value="30" min="10" max="50" /></div>
+						<span class="design_pieces" >
+							<label>Width</label>
+							<input class="dark_textboxs" type="text" value="800px" />
+							<label>Height</label>
+							<input class="dark_textboxs" type="text" value="40px" />
+							<label>Display</label>
+							<select class="dark_selects" name="d_display" >
+								<option>block</option>
+								<option>inline-block</option>
+								<option>inline</option>
+								<option>none</option>
+							</select>
+							<br />
+							<label>Float|Pos</label>
+							<select class="dark_selects" >
+								<option>none</option>
+								<option>left</option>
+								<option>right</option>
+							</select>
+							<select class="dark_selects" >
+								<option value="relative" >relative</option>
+								<option value="absolute" >absolute (to parent)</option>
+								<option value="fixed" >fixed (to client)</option>
+							</select>
+							<label class="d_background" >BackG</label>
+							<input class="dark_textboxs" type="text" value="#555555" />
+							<input class="d_random_btn" name="random_color" type="button" value="Random" />
+							<input class="d_img_btn" type="button" value="img" style="width: inherit;" />
+							<input class="d_fetch_img" type="file" accept="image/*" />
+							<br />
+							<label>Border</label>
+							<select class="dark_selects" >
+								<option>none</option>
+								<option selected="selected" >solid</option>
+								<option>dotted</option>
+								<option>inset</option>
+							</select>
+							<select class="dark_selects" >
+								<option value="" >all</option>
+								<option value="-top" selected="selected" >top</option>
+								<option value="-left" >left</option>
+								<option value="-right" >right</option>
+								<option value="-bottom" >bottom</option>
+							</select>
+							<input class="dark_textboxs" type="text" value="3px" />
+							<input class="dark_textboxs" type="text" value="#333333" />
+							<input class="d_random_btn" name="random_color" type="button" value="Random" />
+							<br />
+							<label>Radius</label>
+							<input class="dark_textboxs" type="text" value="0px 0px 5px 5px" />
+							<label>Margin</label>
+							<input class="dark_textboxs" type="text" value="0px 0px" />
+							<label>Padding</label>
+							<input class="dark_textboxs" type="text" value="0px 0px" />
+							<br />
+							<label>Top</label>
+							<input class="dark_textboxs" type="text" value="auto" />
+							<label>Left</label>
+							<input class="dark_textboxs" type="text" value="auto" />
+							<label>Right</label>
+							<input class="dark_textboxs" type="text" value="auto" />
+							<br />
+							<label>Bottom</label>
+							<input class="dark_textboxs" type="text" value="auto" style="width: 40px;" />
+							<label>TextAlign</label>
+							<select class="dark_selects" >
+								<option>center</option>
+								<option>left</option>
+								<option>right</option>
+							</select>
+							<label>TextColor</label>
+							<input class="dark_textboxs" type="text" value="black" />
+							<input class="d_random_btn" name="random_color" type="button" value="Rd" style="width: 28px;" />
+							<br />
+							<label>TextDecoration</label>
+							<select class="dark_selects" >
+								<option>none</option>
+								<option>underline</option>
+								<option>overline</option>
+								<option>line-through</option>
+							</select>
+							<label>FontFamily</label>
+							<select class="dark_selects" >
+								<option>sans-serif</option>
+								<option>serif</option>
+								<option>arial</option>
+								<option>courier</option>
+								<option>helvetica</option>
+							</select>
+							<label>FontWeight</label>
+							<select class="dark_selects" >
+								<option>bold</option>
+								<option>normal</option>
+								<option>bolder</option>
+								<option>lighter</option>
+							</select>
+						</span>
+					</div>
+				</div>
+					<input class="dark_normal" id="button_plus" type="button" value="+" />
+					<label><input id="random_color_auto" type="checkbox" checked="checked" />Génération automatique si couleur aléatoire</label>
+					<br /><br />
+					<div id="form_buttons">
+						<input class="dark_normal" id="button_generer" type="button" value="Générer (Entrée)" />
+						<input class="dark_normal" id="button_default" type="reset" value="Valeurs par défaut" /><!-- restat les valeurs des input seulement -->
+						<input class="dark_normal" id="button_enregistrer" type="button" value="Enregistrer" />
+						<input class="dark_normal" id="button_importer" type="button" value="Importer" />
+						<input type="file" id="importer_fichier" />
+					</div>
+				</form>
+			</span>
+			<!-- view -->
+			<div class="view" >
+				<!-- demo_view -->
+				<span id="demo_view" >
+				</span>
+				<!-- source_view -->
+				<!--span id="source_view" >
+				</span-->
+			</div>
+		</div>
+		<!-- javascript link -->
+		<script src="default_script.js" >
+		</script>
+	</body>
+</html>

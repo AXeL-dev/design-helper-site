@@ -1,0 +1,206 @@
+/* Default Style for Design Helper By AXeL */
+
+/*-------- body --------*/
+body {
+background: #1c2126; /* bleu foncé */
+color: #f4f3f3; /* blanc cassé */
+font-family: sans-serif;
+}
+
+/*-------- * (All) --------*/
+* {
+margin: 0;
+padding: 0;
+}
+
+/*-------- header --------*/
+.header {
+width: 700px;
+float: right;
+margin-right: 100px;
+text-align: center;
+}
+
+.header h1 {
+padding: 10px;
+font-size: 20px;
+font-weight: normal;
+}
+
+.author_name {
+font-size: 12px;
+font-weight: bold;
+background: #14171a;
+color: #555555;
+padding: 5px;
+border-radius: 3px;
+vertical-align: middle;
+text-decoration: none;
+}
+
+/*-------- tools & view --------*/
+#tools, .view {
+float: left;
+border: 1px dotted #f4f3f3;
+margin: 5px;
+padding: 5px;
+font-size: 15px;
+border-radius: 10px;
+}
+
+#scroll_div {
+overflow-y: scroll;
+padding-right: 2px;
+margin-bottom: 5px;
+max-height: 508px;
+}
+
+.d_p_title {
+width: auto;
+background: #14171a;
+text-align: center;
+//padding: 2px;
+border-radius: 5px 5px 0px 0px;
+height: 25px;
+}
+
+.d_p_title input {
+font-size: 16px;
+font-weight: bold;
+text-align: center;
+}
+
+.design_pieces {
+display: inline-block;
+margin: 10px 3px;
+overflow-y: scroll;
+max-height: 120px;
+}
+
+.design_pieces label {
+display: inline-block;
+width: 55px;
+text-align: right;
+padding: 6px;
+}
+
+.design_pieces input {
+color: #555555;
+width: 70px;
+}
+
+/* to apply css to chrome only */
+//@media screen and (-webkit-min-device-pixel-ratio:0) {
+//}
+
+/*-------- dark theme --------*/
+
+.dark_textboxs, .dark_numbers {
+vertical-align: middle;
+background-color: #14171a;
+color: #f4f3f3;
+border: 1px solid #121212;
+border-radius: 4px;
+padding: 1px;
+height: 20px;
+margin: 0 2px 0 0;
+}
+
+.dark_numbers, .dark_selects {
+width: 45px;
+}
+
+.dark_selects {
+height: 25px;
+}
+
+.dark_buttons, .dark_selects, .d_random_btn, .d_img_btn, .dark_normal, #random_color_auto {
+vertical-align: middle;
+background-color: #1d242a;
+color: #f4f3f3;
+border: 1px solid #121212;
+border-radius: 4px;
+margin: 0 2px 0 0;
+min-height: 25px;
+}
+
+.dark_buttons {
+height: 25px;
+width: 20px;
+float: left;
+}
+
+.dark_normal {
+padding: 3px 5px;
+}
+
+.dark_normal:disabled {
+color: #141719;
+}
+
+.dark_buttons, .dark_selects, .d_random_btn, .d_img_btn, .dark_normal {
+box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.15) inset;
+}
+
+.dark_textboxs:focus, .dark_buttons:focus, .dark_selects:focus, .d_random_btn:focus, .d_img_btn:focus, .dark_normal:focus {
+border: 2px solid #45648a;
+}
+
+/*-------- end of dark theme --------*/
+
+.design_pieces select {
+color: #121212;
+width: 75px;
+font-weight: bold;
+}
+
+#form_buttons {
+text-align: center;
+}
+
+#button_plus {
+padding: 2px 5px;
+margin: -5px 0px;
+font-size: 16px;
+font-weight: bold;
+}
+
+.font_size_input {
+width: 45px;
+}
+
+.hide_show, .question_btn {
+float: left;
+height: 25px;
+}
+
+.d_special_chars {
+height: 25px;
+min-width: 45px;
+vertical-align: middle;
+}
+
+.d_background {
+margin: 0 -9px 0 -12px;
+}
+
+.d_img_btn, .d_random_btn {
+margin: 0 0 0 -5px;
+}
+
+.d_fetch_img, #importer_fichier {
+display: none;
+}
+
+/*-------- view --------*/
+.view {
+max-width: 800px;
+overflow: hidden;
+}
+
+/*-------- disable_all --------*/
+.disable_all {
+opacity: 0.3;
+pointer-events: none;
+}
+
